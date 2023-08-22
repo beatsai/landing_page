@@ -5,6 +5,9 @@ module.exports = {
 		colors: {
 			'red': '#DC143C'
 		},
+		backgroundImage: {
+			'background-anime': "url('/background.webp')"
+		},
 		extend: {},
 	},
 	plugins: [],
