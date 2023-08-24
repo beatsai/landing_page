@@ -3,6 +3,7 @@ import Navbar from "../components/navbar.astro";
 import Layout from "../layouts/Layout.astro";
 import Connectspotify from "../components/connectspotify.astro";
 import Pricing from "../components/pricing.astro";
+import Waitlist from "../components/waitlist.astro";
 ---
 
 <Layout title="Beats.ai | High Quality Reccomendations For Your Music" />
@@ -11,7 +12,9 @@ import Pricing from "../components/pricing.astro";
   <Navbar />
 
   <div class="flex items-center justify-around flex-col my-30">
-    <h1 class="text-7xl font-bold text-[#ffffff] text-center leading-snug mb-5">
+    <h1
+      class="text-7xl font-bold text-[#ffffff] text-center leading-snug mb-10"
+    >
       get <span class="text-[#DC143C]">high quality{" "}</span>info on <br /> your
       taste in <span class="text-[#DC143C]">music.</span>
     </h1>
@@ -21,8 +24,7 @@ import Pricing from "../components/pricing.astro";
     </span>
 
     <div class="flex items-center justify-center w-full">
-      <Connectspotify />
-      <Pricing />
+      <Waitlist />
     </div>
   </div>
 </div>
