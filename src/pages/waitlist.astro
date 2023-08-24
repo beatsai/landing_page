@@ -1,0 +1,15 @@
+---
+import Navbar from "../components/navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Waitlistform from "../components/waitlistform.astro";
+---
+
+<div class="h-screen bg-[url('/background.webp')] flex flex-col items-center">
+  <Layout title="waitlist | beats.ai" />
+  <Navbar />
+
+  <h1 class="text-[#ffffff] text-lg mb-10">
+    join the waitlist. get updates on development of beats.ai
+  </h1>
+  <Waitlistform />
+</div>

@@ -1,0 +1,38 @@
+---
+import "@fontsource/poppins";
+---
+
+<div class="card flex items-center bg-[#1E1E1E] rounded-md">
+  <form class="flex w-full h-full flex-col justify-center items-center">
+    <div class="flex flex-col mb-10">
+      <label for="name" class="text-[#ffffff] mb-5">name</label>
+      <input
+        type="text"
+        class="bg-[#333333] w-96 h-12 px-5 text-[#ffffff] rounded-md"
+        placeholder="harry potter"
+      />
+    </div>
+
+    <div class="flex flex-col mb-20">
+      <label for="email" class="text-[#ffffff] mb-5">email</label>
+      <input
+        type="email"
+        class="bg-[#333333] w-96 h-12 px-5 text-[#ffffff] rounded-md"
+        placeholder="harry.potter@gmail.com"
+      />
+    </div>
+    <button
+      type="submit"
+      class="bg-[#DC143C] text-[#ffffff] px-20 py-5 rounded-md"
+      >join the waitlist</button
+    >
+  </form>
+</div>
+
+<style>
+  .card {
+    font-family: "Poppins", sans-serif;
+    height: 500px;
+    width: 700px;
+  }
+</style>
