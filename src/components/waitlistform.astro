@@ -8,6 +8,11 @@ if (Astro.request.method === "POST") {
     const email = data.get("email");
     console.log(name);
     console.log(email);
+
+    await fetch("http://127.0.0.1:5000/add_user_to_waitlist", {
+      method: "POST",
+      body: data,
+    });
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);
